@@ -1,0 +1,35 @@
+@model WebKurs_AddPerson_25_4_17.Model.SimplePerson
+
+@{
+    ViewData["Title"] = "AddPerson";
+}
+
+<h2>AddPerson</h2>
+
+@*<form action="/AddPerson/AddPerson" method="post">
+    Förnamn<input type="text" name="name" />
+    Ålder<input type="text" name="age" />
+    <input type="submit" value="Add Person" />
+</form>*@
+
+<form asp-controller ="AddPerson" asp-action="AddPerson" method="post">
+    <div>
+        First Name: <br />
+        <input type="text" asp-for="Name"/><br />
+        <span asp-validation-for="Name" class="text-danger"></span><br />
+        
+
+
+        Age: sss
+        <br />
+        <input type="text" asp-for="Age" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+        
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        
+        <button type="submit">Add Person</button>
+    </div>
+
+</form>
+

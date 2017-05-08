@@ -1,0 +1,28 @@
+@model WebKurs_AddPerson_25_4_17.Model.SimplePerson
+
+
+@{
+    ViewData["Title"] = "PersonAdded";
+}
+
+<h2>PersonAdded</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        
+    </dl>
+</div>
